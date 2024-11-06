@@ -21,7 +21,7 @@ import com.github.gradle.node.npm.task.NpxTask
 
 tasks {
   val lintOpenAPI by registering(NpxTask::class) {
-    command.set("@redocly/cli@1.5.0")
+    command.set("@redocly/cli@1.25.5")
     args.set(listOf("lint", "--extends=recommended-strict", "${project.projectDir}/open-api/openapi.yaml"))
   }
 
